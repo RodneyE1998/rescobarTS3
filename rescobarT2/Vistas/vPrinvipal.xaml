@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rescobarT2.Vistas.vPrinvipal"
+             Title="vPrinvipal">
+    <VerticalStackLayout Spacing="10">
+        <Label x:Name="lblUsuario"
+               FontSize="14"
+               HorizontalTextAlignment="End"
+               TextColor="Blue"/>
+        <Label 
+            Text="Sistema de Calificaciones"
+            FontAttributes="Bold"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+            TextColor="Orange"/>
+
+        <Border Stroke="blue">
+            <Picker x:Name="pkEstudiantes" Title="Estudiantes" TextColor="Blue" >
+                <Picker.Items>
+                    <x:String>Rodney</x:String>
+                    <x:String>Jose</x:String>
+                    <x:String>Stalin</x:String>
+                    <x:String>Damian</x:String>
+                    <x:String>Alberto</x:String>
+                </Picker.Items>
+            </Picker>
+        </Border>
+        <!-- <Label x:Name="lblSeleccionado"
+               TextColor="Red"
+               FontSize="16"
+               HorizontalTextAlignment="Center"
+               Text=""/>
+
+        <Button x:Name="btnMostrar"
+                Text="Seleccionar Estudiante"
+                Clicked="btnMostrar_Clicked"/> -->
+        <Label 
+            Text="Nota Seguimiento 1"
+            FontSize="20"
+            TextColor="Orange"
+            HorizontalTextAlignment="Start"
+         />
+
+        <Border Stroke="black">
+            <Entry x:Name="txtNota1" 
+               Placeholder="Ingrese nota Parcial 1" PlaceholderColor="Blue"
+                   TextChanged="txtNota1_TextChanged" MaxLength="2"
+               />
+        </Border>
+        <Border Stroke="black">
+            <Entry x:Name="txtNota2" 
+               Placeholder="Ingrese nota Examen parcial 1" PlaceholderColor="Blue"
+                   TextChanged="txtNota2_TextChanged" MaxLength="2"
+               />
+        </Border>
+        <Button x:Name="btnParcial1" Text="Nota Parcial 1" Clicked="btnParcial1_Clicked" 
+                BackgroundColor="Orange"> 
+        </Button>
+
+
+        <Label 
+            Text="Nota Seguimiento 2"
+            FontSize="20"
+            TextColor="Orange"
+            HorizontalTextAlignment="Start"
+         />
+
+        <DatePicker x:Name="dpFechas" Date="12/09/2023" Format="MM/DD/yyyy">
+        </DatePicker>
+
+        <!--<Button x:Name="btnFecha" Text="Ver Fecha"
+                Clicked="btnFecha_Clicked" />  -->
+
+        <Border Stroke="black">
+            <Entry x:Name="txtNota3" 
+               Placeholder="Ingrese nota Parcial 2" PlaceholderColor="Blue"
+                   TextChanged="txtNota3_TextChanged" MaxLength="2"
+               />
+        </Border>
+        <Border Stroke="black">
+            <Entry x:Name="txtNota4" 
+               Placeholder="Ingrese nota Examen parcial 2" PlaceholderColor="Blue"
+                   TextChanged="txtNota4_TextChanged" MaxLength="2"
+               />
+        </Border>
+        <Button x:Name="btnParcial2" Text="Nota Parcial 2" Clicked="btnParcial2_Clicked"
+                BackgroundColor="Orange">
+        </Button>
+
+        <Button x:Name="btnNotaFinal" Text="Nota Final" Clicked="btnNotaFinal_Clicked"
+                BackgroundColor="Orange">
+        </Button>
+        
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rescobarT2.Vistas.vlogin"
+             Title="vlogin">
+    <VerticalStackLayout Spacing="30" Padding="20">
+        <Label 
+            Text="Tarea Semana 3 Rodney Escobar "
+            HorizontalOptions="Center"
+            FontSize="20"
+            TextColor="Blue"/>
+
+        <Image Source="https://revista.uisrael.edu.ec/images/uisrael.png"
+               WidthRequest="200"></Image>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="USUARIO"
+                   FontSize="14"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Ingrese el user"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+
+            <Label Text="CONSTRASEÑA"
+                   FontSize="14"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtContraseña"
+                   Placeholder="Ingrese el pass"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   IsPassword="True"/>
+        </Grid>
+
+        <Button x:Name="btnIniciar"
+                Text="Iniciar Sesion"
+                Clicked="btnIniciar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
